@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <header>
+      <h1>Chat Home</h1>
+    </header>
+    <main>
+      <div id="nickname">
+        <h3>Set Your Nickname</h3>
+        <form>
+          <input type="text" placeholder="write your nickname" required />
+          <button>Set Nickname</button>
+        </form>
+      </div>
+      <div id="roomlist">
+        <h3>Choose Chatting Room</h3>
+        <form>
+          <input type="text" placeholder="room name" required />
+          <button>Enter Room</button>
+        </form>
+      </div>
+      <div id="room">
+        <h3></h3>
+        <ul></ul>
+        <form>
+          <input type="text" placeholder="write a message" required />
+          <button>Send</button>
+        </form>
+      </div>
+    </main>
+    <script src="http://localhost:4000/socket.io/socket.io.js"></script>
+    <script src="public/js/app.js"></script>
+  </body>
+</html>
